@@ -1,0 +1,96 @@
+body{
+  margin: 0;
+}
+
+.background{
+height: 100vh;
+width: 100vw;
+display: block;
+position: absolute;
+}
+
+
+.walk{
+  height: 131px;
+  width: 64px;
+  position: fixed;
+  left: 0;
+  animation: walk 10s linear infinite;
+  /*animation-iteration-count: infinite;*/
+}
+
+
+.forwalk{
+  background: url("images/forwalk.png")0 0 no-repeat;
+  padding: 10px;
+  height: 131px;
+  width: 47px;
+  display: block;
+  margin-top: 450px;
+  animation-name: forwalk;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: steps(10, end);
+  }
+
+@keyframes forwalk {
+  from{ background-position: 0 0 }
+  to{background-position: -639px 0 }
+}
+@keyframes walk {
+  to {left: 100%;}
+}
+
+.fly{
+  height: 233px;
+  width: 240px;
+  position: fixed;
+  right: 0;
+  animation: fly 10s linear infinite;
+}
+
+.flalling{
+  background: url("images/ave.png") 0 0 repeat;
+  display: block;
+  height: 130px;
+  width: 134px;
+  animation-name: flalling;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: steps(5, end);
+}
+
+@keyframes flalling {
+  from{ background-position: 0 0 }
+  to{background-position: 671px 0 }
+}
+@keyframes fly {
+  to {right: 100%;}
+}
+
+.canvas{
+  height: 67px;
+  width: 255px;
+  position: fixed;
+  left: 0;
+  animation: canvas 10s linear infinite;
+}
+
+.avion{
+  background: url("images/avion.png") 0 0 repeat;
+  display: block;
+  height: 67px;
+  width: 127px;
+  animation-name: avion;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: steps(4, end);
+}
+
+@keyframes avion {
+  from{ background-position: 0 0 }
+  to{background-position: -510px 0 }
+}
+@keyframes canvas {
+  to {left: 100%;}
+}
